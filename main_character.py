@@ -6,12 +6,12 @@ class MyCharacter(Turtle):
         self.shape('turtle')
         self.color("blue")
         self.penup()
-        self.goto(0,-280)
+        self.starting_position()
         self.setheading(90)
 
     def go_up(self):
         self.forward(10)
-    def go_down(self):
-        self.backward(10)
 
+    def starting_position(self):
+        self.goto(0, -280)
 
